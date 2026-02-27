@@ -37,8 +37,9 @@ Instead of submitting a traditional report, I demonstrated my technical skills b
 ---
 
 ## 🏗️ Project Structure
-project22/
-│
+Web Project/
+
+
 ├── app.py
 ├── database.db
 ├── README.md
