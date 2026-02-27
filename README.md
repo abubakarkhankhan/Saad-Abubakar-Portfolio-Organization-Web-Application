@@ -50,9 +50,7 @@ Web Project/
 │
 └── templates/
 
-git add README.md
-git commit -m "Fixed project structure formatting"
-git push
+
 
 ---
 
