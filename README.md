@@ -38,8 +38,7 @@ Instead of submitting a traditional report, I demonstrated my technical skills b
 
 ## 🏗️ Project Structure
 Web Project/
-
-
+│
 ├── app.py
 ├── database.db
 ├── README.md
@@ -62,14 +61,14 @@ pip install flask
 python app.py
 Open in browser:
 http://127.0.0.1:5000
-
+---
 🔐 Admin Login
 
 | Field    | Value    |
 | -------- | -------- |
 | Username | admin    |
 | Password | admin123 |
-
+---
 👨‍💻 Author
 
 Saad Abubakar
