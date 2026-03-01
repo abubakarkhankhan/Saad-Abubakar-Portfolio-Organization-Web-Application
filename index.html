@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaEdge Skills Academy - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/chatbot">Chatbot</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/login">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>🚀 NovaEdge Skills Academy</h1>
+            <p>Empowering Youth with Digital Skills for Tomorrow</p>
+            <p style="font-size: 1rem; color: #888; margin-bottom: 2rem;">
+                Learn Web Development, Design, and IT Skills in a Modern, Student-Friendly Environment
+            </p>
+            <a href="/courses" class="btn">Explore Courses</a>
+            <a href="/contact" class="btn">Get in Touch</a>
+        </div>
+
+        <div class="grid" style="margin-top: 3rem;">
+            <div class="card">
+                <h3>💻 Modern Learning</h3>
+                <p>Industry-relevant courses designed for today's digital world with hands-on projects and real-world applications.</p>
+            </div>
+            <div class="card">
+                <h3>👨‍🏫 Expert Instructors</h3>
+                <p>Learn from experienced professionals who are passionate about teaching and mentoring students.</p>
+            </div>
+            <div class="card">
+                <h3>🎓 Flexible Schedule</h3>
+                <p>Choose from weekday or weekend batches that fit your schedule. Online and in-person options available.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

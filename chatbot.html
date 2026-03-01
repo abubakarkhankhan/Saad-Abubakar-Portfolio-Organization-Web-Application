@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - NovaEdge Skills Academy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/chatbot">Chatbot</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/login">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="chat-container">
+            <h1 style="color: #667eea; text-align: center; margin-bottom: 1rem;">💬 Chat with Us</h1>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">
+                Ask me about courses, fees, timings, location, or contact info!
+            </p>
+
+            <div class="chat-box" id="chatBox">
+                <div class="message bot-message">
+                    Hello! Welcome to NovaEdge Skills Academy. How can I help you today?
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input 
+                    type="text" 
+                    id="chatInput" 
+                    placeholder="Type your message..." 
+                    onkeypress="checkEnter(event)"
+                >
+                <button class="btn" onclick="sendMessage()">Send</button>
+            </div>
+
+            <div style="margin-top: 1rem; padding: 1rem; background: #f0f0f0; border-radius: 10px;">
+                <p style="font-size: 0.9rem; color: #666; margin: 0;">
+                    <strong>Try asking:</strong> "What courses do you offer?", "What are the fees?", "What are your timings?", "Where are you located?"
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

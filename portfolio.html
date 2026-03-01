@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Saad Abubakar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/chatbot">Chatbot</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/login">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="profile-container">
+            <div class="profile-image-wrapper">
+                <img 
+                    src="{{ url_for('static', filename='uploads/profile.jpg') }}" 
+                    alt="Profile Picture" 
+                    class="profile-image"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Saad+Abubakar&size=200&background=667eea&color=fff&bold=true'"
+                >
+            </div>
+
+            <h1 style="color: #667eea; margin-bottom: 0.5rem;">Saad Abubakar</h1>
+            <p style="font-size: 1.2rem; color: #764ba2; font-weight: 600; margin-bottom: 0.5rem;">
+                BS Software Engineering Student
+            </p>
+            <p style="color: #666; margin-bottom: 2rem;">
+                <strong>Roll Number:</strong> 055 | <strong>Semester:</strong> 5
+            </p>
+
+            <div style="margin-top: 3rem; text-align: left;">
+                <h2 style="color: #667eea; margin-bottom: 1.5rem; text-align: center;">🚀 Technical Skills</h2>
+                
+                <div class="skills-container">
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>Flask</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
+                <h2 style="color: #667eea; margin-bottom: 1rem;">📚 About This Project</h2>
+                <p style="line-height: 1.8; color: #666;">
+                    This web application was developed as a semester project for BS Software Engineering. 
+                    It demonstrates the implementation of a full-stack web application using Flask, SQLite, 
+                    HTML, CSS, and JavaScript. The project includes features like contact forms, chatbot 
+                    functionality, and dynamic content management.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

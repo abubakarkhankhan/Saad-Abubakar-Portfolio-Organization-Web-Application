@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NovaEdge Skills Academy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/chatbot">Chatbot</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/login">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <h1 style="color: #667eea; text-align: center; margin-bottom: 2rem;">Get in Touch</h1>
+            
+            <form method="POST" action="/contact">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Tell us about your inquiry..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
+                <h3 style="color: #667eea; margin-bottom: 1rem;">📍 Contact Information</h3>
+                <p style="margin: 0.5rem 0;"><strong>Address:</strong> Tech Plaza, Main Boulevard, Lahore, Pakistan</p>
+                <p style="margin: 0.5rem 0;"><strong>Phone:</strong> +92-300-1234567</p>
+                <p style="margin: 0.5rem 0;"><strong>Email:</strong> info@novaedge.edu.pk</p>
+                <p style="margin: 0.5rem 0;"><strong>Hours:</strong> Mon-Fri, 9 AM - 5 PM</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Show success message after form submission
+        if (window.location.search.includes('success')) {
+            alert('Thank you! Your message has been sent successfully.');
+        }
+    </script>
+</body>
+</html>

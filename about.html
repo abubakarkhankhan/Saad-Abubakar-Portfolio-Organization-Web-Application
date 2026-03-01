@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - NovaEdge Skills Academy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/chatbot">Chatbot</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/login">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card" style="margin-bottom: 2rem;">
+            <h1 style="color: #667eea; margin-bottom: 1rem;">About NovaEdge Skills Academy</h1>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                NovaEdge Skills Academy is a modern training institute dedicated to empowering youth with essential digital skills. 
+                We believe in practical, hands-on learning that prepares students for real-world challenges in technology and design.
+            </p>
+        </div>
+
+        <div class="card" style="margin-bottom: 2rem;">
+            <h2 style="color: #667eea; margin-bottom: 1rem;">🎯 Our Mission</h2>
+            <p style="line-height: 1.8;">
+                To provide accessible, high-quality technology education that transforms students into confident, 
+                skilled professionals ready to excel in the digital economy. We focus on building both technical 
+                expertise and creative problem-solving abilities.
+            </p>
+        </div>
+
+        <div class="card" style="margin-bottom: 2rem;">
+            <h2 style="color: #667eea; margin-bottom: 1rem;">⭐ Why Choose Us?</h2>
+            <div class="grid">
+                <div>
+                    <h3 style="color: #764ba2;">📚 Practical Curriculum</h3>
+                    <p>Learn by doing with real projects and industry-standard tools.</p>
+                </div>
+                <div>
+                    <h3 style="color: #764ba2;">🏆 Certification</h3>
+                    <p>Receive recognized certificates upon course completion.</p>
+                </div>
+                <div>
+                    <h3 style="color: #764ba2;">💼 Career Support</h3>
+                    <p>Get guidance on building portfolios and job preparation.</p>
+                </div>
+                <div>
+                    <h3 style="color: #764ba2;">🤝 Community</h3>
+                    <p>Join a supportive network of learners and mentors.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 style="color: #667eea; margin-bottom: 1rem;">🎁 Student Benefits</h2>
+            <ul style="line-height: 2; font-size: 1.05rem;">
+                <li>✅ Lifetime access to course materials</li>
+                <li>✅ Small batch sizes for personalized attention</li>
+                <li>✅ Modern computer lab facilities</li>
+                <li>✅ Free workshop sessions and webinars</li>
+                <li>✅ Flexible payment plans available</li>
+                <li>✅ Job placement assistance</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
