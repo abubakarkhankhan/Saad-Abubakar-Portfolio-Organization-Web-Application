@@ -1,0 +1,7 @@
+templates/about.html
+templates/contact.html
+templates/login.html
+templates/dashboard.html
+templates/courses.html
+templates/portfolio.html
+templates/chatbot.html
